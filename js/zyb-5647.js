@@ -42,3 +42,10 @@
 // liElementArray.map((item,key)=>{
 //     console.log(``)
 // })
+
+function soma(parametro) {
+    nr1 = 10;
+    nr2 = 5; 
+    console.log(`Resultado : ${parseInt(nr1) + parseInt(nr2) + parseInt(parametro)}`);
+    console.log(`Este é o parametro que foi passado: ${parametro}`)
+}
