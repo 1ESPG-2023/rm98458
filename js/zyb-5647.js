@@ -43,9 +43,54 @@
 //     console.log(``)
 // })
 
-function soma(parametro) {
-    nr1 = 10;
-    nr2 = 5; 
-    console.log(`Resultado : ${parseInt(nr1) + parseInt(nr2) + parseInt(parametro)}`);
-    console.log(`Este é o parametro que foi passado: ${parametro}`)
+// function soma(parametro) {
+//     nr1 = 10;
+//     nr2 = 5; 
+//     console.log(`Resultado : ${parseInt(nr1) + parseInt(nr2) + parseInt(parametro)}`);
+//     console.log(`Este é o parametro que foi passado: ${parametro}`)
+// }
+
+
+// //ARROW FUNCTION
+// const mudaCor = ()=>{
+
+//     //FUNÇÂO SET TIME-OUT
+//     setTimeout(alert("EXECUTOU"), 5000)
+
+// }
+
+// mudaCor();
+
+function mudaCor(){
+    
+    let r = "";
+    let g = "";
+    let b = "";
+
+    //random = Gera números aleatórios entre 0 e 1
+    //ceil, floor e round, arredondam o número para cima, baixo e aleatóriamente.
+
+    //Determinando para a variável r um valor entre 0 e 255
+    r = Math.round(Math.random() * 255);
+    g = Math.round(Math.random() * 255);
+    b = Math.round(Math.random() * 255);
+    
+    const cabecalho = document.querySelector(".central");
+
+    cabecalho.setAttribute("style", `background-color:rgb(${r},${g},${b})`)
+
+    tmp = setTimeout(mudaCor,1000)
+
 }
+
+
+function alteraImg(){
+
+   let caminho = "/img/banner-lateral-2.png"
+
+   const img1 = document.querySelector(".l-e > img")
+
+   img1.src  = caminho
+}
+
+alteraImg();

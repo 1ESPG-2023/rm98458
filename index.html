@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exemplo Arrays</title>
-    <script src="js/zyb-5647.js"></script>
+    <script src="js/zyb-5647.js" defer></script>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -16,19 +16,22 @@
 
     <div class="container">
         <aside class="l-e">
-            <span>B-E</span>
+            <img id="img-1" src="/img/banner-lateral-2.png" alt="" >
         </aside>
         <section class="central">
             <span>CONTÉUDO</span>
         </section>
         <aside class="l-d">
-            <span>B-D</span>
+            <img src="/img/banner-lateral-1.png" alt="">
         </aside>
     </div>
 
     <footer class="rodape">
         <span>RODAPÉ</span>
-        <button value="10" onclick="soma(this.value)">CLICK</button>
+        <!-- <button value="10" onclick="soma(this.value)">CLICK</button> -->
+        <button onclick="mudaCor()">START</button>
+        <button onclick="clearTimeout(tmp)">STOP</button>
+        <button onclick="alteraImg()">ALTERAR</button>
     </footer>
 </body>
 </html>
